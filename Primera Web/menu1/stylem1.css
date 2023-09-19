@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header {
+    display: inline-block;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    /* Agregar propiedad de display */
+    /* Agregar propiedad de line-height */
+    padding: 0 50px;
+  }
+  
+  header nav {
+    /* Agregar propiedad de float */
+    float: right;
+  }
+  
+  nav ul li {
+    /* Agregar propiedad de display */
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 70px;
+    /* Agregar propiedad de line-height */
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  nav a:hover {
+    color: #1bf7de;
+  }

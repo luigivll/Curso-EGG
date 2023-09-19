@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+#check {
+  display: none;
+}
+
+.checkbtn{
+font-size: 25px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+  margin: 20px 0; /* Espacio entre el título y las flip-cards */
+  text-align: center; /* Centra el texto horizontalmente */
+  width: 100%;
+}
+
+h3{
+  font-size: 24px;
+  color: rgb(36, 207, 219);
+  margin: 20px 0; /* Espacio entre el título y las flip-cards */
+  text-align: center; /* Centra el texto horizontalmente */
+  width: 100%;
+}
+
+main {
+  background-color: #00b3d259;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(243, 143, 29);
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Apila las secciones verticalmente */
+  align-items: center;
+  position: relative;
+}
+
+body {
+  background-color: rgb(50, 53, 98);
+}
+
+.Menu {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: right;
+  align-items: center; /* Centra horizontalmente */
+  
+}
+
+.Menu .button {
+ 
+  height: 35px;
+  
+}
+
+.Menu .button a:first-child {
+  color: rgb(2, 2, 2);
+  display: block; /* Asegura que cada enlace del menú esté en una nueva línea */
+  margin-bottom: 10px; /* Espacio entre enlaces del menú */
+}
+
+.button {
+  color: aliceblue;
+  background-color: rgb(174, 82, 159);
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  cursor: pointer;
+  width: 150px;
+  padding: 6px;
+  float: right;
+  font-family: Arial, sans-serif;
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button:hover {
+  background-color: #00b4d2;
+  color: #fff;
+}
+
+.button:active {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+
+.cajafooter {
+  text-align: center;
+  clear: both;
+  height: 200px;
+  background-color: rgb(50, 53, 98);
+}
+
+header .Menu {
+  background-image: url("img/banner.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.footer {
+  font-size: 18px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-menu li:last-child {
+  margin-right: 0;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* CARD FLIP */
+.flip-card {
+  width: 500px;
+  height: 450px;
+  perspective: 1000px;
+  margin: 10px;
+  margin-right: 20px; /* Espacio entre las tarjetas */
+ 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+ 
+  border-radius: 10px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  overflow: hidden;
+  
+}
+
+.flip-card-front img {
+  height: 300px;
+  width: 200px;
+  
+}
+
+.flip-card-back {
+  background-color: rgb(50, 53, 98);
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  border: 2px solid;
+  
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+.attribute {
+  position: absolute;
+  bottom: 10px;
+  border-color: #ffffff;
+}
+
+.flip-card-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  margin: 20px 0; /* Agrega espacio entre las secciones */
+  justify-content: center;
+  text-align: center;
+  border-color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+  .flip-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+.checkbtn {
+  display: block;
+}
+  .flip-card {
+    margin: 10px 0; /* Espacio entre las flip-cards al encoger la página */
+  }
+}
+  .Menu .button {
+  width: auto; /* Ancho automático para ajustarse al contenido */
+  float: none; /* No se flotan en dispositivos móviles */
+  margin: 5px 0; /* Espacio entre los elementos del menú en dispositivos móviles */
+  text-align: right; /* Alineación del texto a la derecha */
+}
+

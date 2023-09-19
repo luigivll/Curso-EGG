@@ -1,0 +1,160 @@
+.Menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Menu .button a:first-child {
+    color: rgb(2, 2, 2);
+   }
+
+   body {
+    background-color: rgb(50, 53, 98);
+    background-image: url("img/spidey.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 103%;
+   
+}
+
+  .title, h1 {
+    text-align: center;
+    background-color: rgb(56, 187, 39);
+    border-radius: 5px;
+  }
+
+.button
+{
+    color: aliceblue;
+    background-color: rgb(96, 223, 184);
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    width: 300px;
+      
+}
+
+.button:hover {
+    background-color: #9fd30f;
+    color: #fff;
+   }
+   .button:active {
+    background-color: rgb(85, 30, 90);
+    color: white;
+    }
+.buttonfoot
+{
+    color: aliceblue;
+    background-color: rgb(96, 223, 184);
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+      
+    
+}
+.container{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ .cajafooter {
+  text-align: center;
+  clear: both;
+  height: 200px;
+  background-color: rgb(50, 53, 98);
+  
+}
+
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+  
+    .footer {
+      font-size: 18px;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 30px 0;
+      border-radius: 10px;
+      
+    }
+    
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 50px;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: 25% 50% 25%;
+    }
+    
+    .footer-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    
+    .footer-menu li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+    .footer-menu li:last-child {
+      margin-right: 0;
+    }
+    
+    .footer-menu a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .social-icons li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .social-icons li:last-child {
+      margin-right: 0;
+    }
+    
+    .social-icons a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    
+    .footer-bottom {
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .footer-bottom p {
+      margin: 0;
+    }
+
+.perfil {
+  background-color: rgba(0, 0, 0, 0.356);
+  opacity: 70%;
+  color: white;
+  font-size: large;
+  font-style: oblique;
+  font-size: larger;
+  
+}

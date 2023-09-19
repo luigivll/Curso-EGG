@@ -1,0 +1,435 @@
+.grid {
+  display: grid;
+  
+}
+
+  h2 {
+    font-size: 24px;
+    color: white;
+    margin: 20px 0; /* Espacio entre el título y las flip-cards */
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%;
+  }
+
+  h3{
+    font-size: 24px;
+    color: rgb(36, 207, 219);
+    margin: 20px 0; /* Espacio entre el título y las flip-cards */
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%;
+  }
+  
+  main {
+    background-color: #00b3d259;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Apila las secciones verticalmente */
+    align-items: center;
+    position: relative;
+  }
+  
+  body {
+    background-color: rgb(50, 53, 98);
+  }
+  
+  .Menu {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: right;
+    align-items: center; /* Centra horizontalmente */
+    flex-wrap: wrap;
+  }
+  
+  .Menu .button {
+   
+    height: 35px;
+    
+  }
+
+  .Menu .button a:first-child {
+    color: rgb(2, 2, 2);
+    display: block; /* Asegura que cada enlace del menú esté en una nueva línea */
+    margin-bottom: 10px; /* Espacio entre enlaces del menú */
+  }
+  
+  .button {
+    color: aliceblue;
+    background-color: rgb(174, 82, 159);
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    cursor: pointer;
+    width: 150px;
+    padding: 6px;
+    float: right;
+    font-family: Arial, sans-serif;
+    animation: mymove 2s infinite;
+  }
+  
+  @keyframes mymove {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .button:hover {
+    background-color: #00b4d2;
+    color: #fff;
+  }
+  
+  .button:active {
+    background-color: rgb(255, 255, 255);
+    color: white;
+  }
+  
+  .cajafooter {
+    text-align: center;
+    clear: both;
+    height: 200px;
+    background-color: rgb(50, 53, 98);
+  }
+  
+  header {
+    background-image: url("img/banner.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+  
+  .footer {
+    font-size: 18px;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    border-radius: 10px;
+  }
+  
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .footer-menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* CARD FLIP */
+  .flip-card {
+    width: 500px;
+    height: 450px;
+    perspective: 1000px;
+    margin: 10px;
+    margin-right: 20px; /* Espacio entre las tarjetas */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .flip-card-front {
+    overflow: hidden;
+  }
+  
+  .flip-card-front img {
+    height: 300px;
+    width: 500px;
+  }
+  
+  .flip-card-back {
+    background-color: rgb(50, 53, 98);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card-content {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  .attribute {
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .flip-card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    margin: 20px 0; /* Agrega espacio entre las secciones */
+    justify-content: center;
+    text-align: center;
+  }
+
+ 
+  @media (max-width: 768px) {
+    .flip-card-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .flip-card {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 0; /* Espacio entre las flip-cards al encoger la página */
+    }
+  }
+    .Menu .button {
+    width: auto; /* Ancho automático para ajustarse al contenido */
+    float: none; /* No se flotan en dispositivos móviles */
+    margin: 5px 0; /* Espacio entre los elementos del menú en dispositivos móviles */
+    text-align: right; /* Alineación del texto a la derecha */
+  }
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+
+.container{
+    width: auto;
+    height: 400px;
+    padding: 0 22px;
+    display: grid;
+}
+.nav {
+  height: 57px;
+  width: 95%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  
+  background-color: rgb(174, 82, 159);
+  position: fixed;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  z-index: 7;
+}
+  
+.nav  .nav-header {
+    width: 50%;
+    display: inline;
+}
+  
+.nav  .nav-header  .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
+}
+  
+.nav  .nav-btn {
+    display: none;
+    
+}
+  
+.nav  .nav-links {
+    width: 50%;
+    display: inline-flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+}
+  
+.nav  .nav-links  a {
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #efefef;
+    animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
+.nav  .nav-links  a:hover {
+    background-color: #00b4d2;
+}
+  
+.nav  #nav-check {
+    display: none;
+}
+  
+@media (max-width:600px) {
+    .nav  .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav  .nav-btn  label {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      width: 50px;
+      height: 50px;
+      padding: 15px;
+      border: none;
+      border-top-right-radius: 10px;
+    }
+    .nav  .nav-btn  label:hover,.nav  #nav-check:checked ~ .nav-btn  label {
+      background-color: rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+    .nav  .nav-btn  label  span {
+      display: block;
+      width: 25px;
+      height: 5px;
+      background-color: #eee;
+      border-radius: 5px;
+    }
+    .nav  .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav  .nav-links  a {
+      display: block;
+      width: 100%;
+      padding-left: 20px;
+    }
+    .nav  #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav  #nav-check:checked ~ .nav-links {
+      height: 250px;
+      overflow-y: hidden;
+    }
+  
+}
+
+.attribute{
+    position: absolute;
+    bottom: 10px;
+}

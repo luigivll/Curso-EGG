@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu{
+    height: 100px;
+    background-color: aqua;
+    float: right;
+  }
+  .barra-lateral{
+    background-color: blueviolet;
+    height: 300px;
+    float: left;
+
+  }
+
+  .contenido{
+    background-color: brown;
+    height: 500px;
+    float: none;
+    
+  }
+
+  .pie{
+   background-color: darkorange;
+    height: 200px;
+
+  }
+
+  .pagina{
+    background-color: blanchedalmond;
+  }
